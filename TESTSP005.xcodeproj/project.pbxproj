@@ -6,8 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		159A221D2ED978DA00439E2F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 159A221C2ED978DA00439E2F /* SDWebImage */; };
+		159A22202ED978E800439E2F /* IGListDiffKit in Frameworks */ = {isa = PBXBuildFile; productRef = 159A221F2ED978E800439E2F /* IGListDiffKit */; };
+		159A22222ED978E800439E2F /* IGListKit in Frameworks */ = {isa = PBXBuildFile; productRef = 159A22212ED978E800439E2F /* IGListKit */; };
+		159A22242ED978E800439E2F /* IGListSwiftKit in Frameworks */ = {isa = PBXBuildFile; productRef = 159A22232ED978E800439E2F /* IGListSwiftKit */; };
+		159A22272ED978F400439E2F /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 159A22262ED978F400439E2F /* FlexLayout */; };
+		159A222A2ED9790400439E2F /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 159A22292ED9790400439E2F /* PinLayout */; };
+		159A222D2ED9799A00439E2F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A222C2ED9799A00439E2F /* PhotoModel.swift */; };
+		159A222F2ED979A500439E2F /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A222E2ED979A500439E2F /* PhotoService.swift */; };
+		159A22312ED979B300439E2F /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A22302ED979B300439E2F /* PhotoViewModel.swift */; };
+		159A22342ED97C2900439E2F /* PhotoSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A22332ED97C2900439E2F /* PhotoSectionController.swift */; };
+		159A22352ED97C2900439E2F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A22322ED97C2900439E2F /* PhotoCell.swift */; };
+		159A22382ED97DDC00439E2F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 159A22372ED97DDC00439E2F /* SnapKit */; };
+		159A223A2ED9818400439E2F /* NativeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A22392ED9818400439E2F /* NativeCollectionViewController.swift */; };
+		159A223D2ED9858100439E2F /* NativePhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A223C2ED9858100439E2F /* NativePhotoViewModel.swift */; };
+		159A223E2ED9858100439E2F /* NativePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159A223B2ED9858100439E2F /* NativePhotoCell.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		159A22032ED978CC00439E2F /* TESTSP005.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TESTSP005.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		159A222C2ED9799A00439E2F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		159A222E2ED979A500439E2F /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		159A22302ED979B300439E2F /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		159A22322ED97C2900439E2F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		159A22332ED97C2900439E2F /* PhotoSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSectionController.swift; sourceTree = "<group>"; };
+		159A22392ED9818400439E2F /* NativeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCollectionViewController.swift; sourceTree = "<group>"; };
+		159A223B2ED9858100439E2F /* NativePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePhotoCell.swift; sourceTree = "<group>"; };
+		159A223C2ED9858100439E2F /* NativePhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePhotoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159A222A2ED9790400439E2F /* PinLayout in Frameworks */,
+				159A22202ED978E800439E2F /* IGListDiffKit in Frameworks */,
+				159A22222ED978E800439E2F /* IGListKit in Frameworks */,
+				159A22382ED97DDC00439E2F /* SnapKit in Frameworks */,
+				159A22272ED978F400439E2F /* FlexLayout in Frameworks */,
+				159A221D2ED978DA00439E2F /* SDWebImage in Frameworks */,
+				159A22242ED978E800439E2F /* IGListSwiftKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +78,8 @@
 		159A21FA2ED978CC00439E2F = {
 			isa = PBXGroup;
 			children = (
+				159A223F2ED9889700439E2F /* Native */,
+				159A222B2ED9798C00439E2F /* Photos */,
 				159A22052ED978CC00439E2F /* TESTSP005 */,
 				159A22042ED978CC00439E2F /* Products */,
 			);
@@ -56,6 +91,28 @@
 				159A22032ED978CC00439E2F /* TESTSP005.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		159A222B2ED9798C00439E2F /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				159A22322ED97C2900439E2F /* PhotoCell.swift */,
+				159A22332ED97C2900439E2F /* PhotoSectionController.swift */,
+				159A222C2ED9799A00439E2F /* PhotoModel.swift */,
+				159A222E2ED979A500439E2F /* PhotoService.swift */,
+				159A22302ED979B300439E2F /* PhotoViewModel.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		159A223F2ED9889700439E2F /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				159A223B2ED9858100439E2F /* NativePhotoCell.swift */,
+				159A223C2ED9858100439E2F /* NativePhotoViewModel.swift */,
+				159A22392ED9818400439E2F /* NativeCollectionViewController.swift */,
+			);
+			path = Native;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +135,13 @@
 			);
 			name = TESTSP005;
 			packageProductDependencies = (
+				159A221C2ED978DA00439E2F /* SDWebImage */,
+				159A221F2ED978E800439E2F /* IGListDiffKit */,
+				159A22212ED978E800439E2F /* IGListKit */,
+				159A22232ED978E800439E2F /* IGListSwiftKit */,
+				159A22262ED978F400439E2F /* FlexLayout */,
+				159A22292ED9790400439E2F /* PinLayout */,
+				159A22372ED97DDC00439E2F /* SnapKit */,
 			);
 			productName = TESTSP005;
 			productReference = 159A22032ED978CC00439E2F /* TESTSP005.app */;
@@ -107,6 +171,13 @@
 			);
 			mainGroup = 159A21FA2ED978CC00439E2F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				159A221B2ED978DA00439E2F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				159A221E2ED978E800439E2F /* XCRemoteSwiftPackageReference "IGListKit" */,
+				159A22252ED978F400439E2F /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				159A22282ED9790400439E2F /* XCRemoteSwiftPackageReference "PinLayout" */,
+				159A22362ED97DDC00439E2F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 159A22042ED978CC00439E2F /* Products */;
 			projectDirPath = "";
@@ -132,6 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159A222F2ED979A500439E2F /* PhotoService.swift in Sources */,
+				159A22312ED979B300439E2F /* PhotoViewModel.swift in Sources */,
+				159A22342ED97C2900439E2F /* PhotoSectionController.swift in Sources */,
+				159A22352ED97C2900439E2F /* PhotoCell.swift in Sources */,
+				159A222D2ED9799A00439E2F /* PhotoModel.swift in Sources */,
+				159A223D2ED9858100439E2F /* NativePhotoViewModel.swift in Sources */,
+				159A223E2ED9858100439E2F /* NativePhotoCell.swift in Sources */,
+				159A223A2ED9818400439E2F /* NativeCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +229,6 @@
 				INFOPLIST_FILE = TESTSP005/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -182,7 +260,6 @@
 				INFOPLIST_FILE = TESTSP005/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,6 +422,87 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		159A221B2ED978DA00439E2F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.3;
+			};
+		};
+		159A221E2ED978E800439E2F /* XCRemoteSwiftPackageReference "IGListKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Instagram/IGListKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		159A22252ED978F400439E2F /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+		159A22282ED9790400439E2F /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.6;
+			};
+		};
+		159A22362ED97DDC00439E2F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		159A221C2ED978DA00439E2F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A221B2ED978DA00439E2F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		159A221F2ED978E800439E2F /* IGListDiffKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A221E2ED978E800439E2F /* XCRemoteSwiftPackageReference "IGListKit" */;
+			productName = IGListDiffKit;
+		};
+		159A22212ED978E800439E2F /* IGListKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A221E2ED978E800439E2F /* XCRemoteSwiftPackageReference "IGListKit" */;
+			productName = IGListKit;
+		};
+		159A22232ED978E800439E2F /* IGListSwiftKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A221E2ED978E800439E2F /* XCRemoteSwiftPackageReference "IGListKit" */;
+			productName = IGListSwiftKit;
+		};
+		159A22262ED978F400439E2F /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A22252ED978F400439E2F /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		159A22292ED9790400439E2F /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A22282ED9790400439E2F /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+		159A22372ED97DDC00439E2F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159A22362ED97DDC00439E2F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 159A21FB2ED978CC00439E2F /* Project object */;
 }
